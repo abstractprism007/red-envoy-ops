@@ -1,0 +1,8 @@
+curl --location 'localhost:9000/trigger' \
+--header 'Content-Type: application/json' \
+--data '{
+    "podName": "nodred-pod-1",
+    "action": "create",
+    "crName": "redenvoy-setup",
+    "namespace": "default"
+}'
